@@ -21,7 +21,7 @@ class BeetsAPI(BeetsPlugin):
 
     def command(self, lib, opt, args):
         app.config['lib'] = lib
-        app.run(port=9999)
+        app.run(host='0.0.0.0', port=9999)
 
 
 @app.before_request
